@@ -18,9 +18,8 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Gravestone Prototype</div>
+        <div id="unity-build-title">World Markers Prototype</div>
       </div>
     </div>
     <script>
@@ -56,13 +55,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/4.loader.js";
+      var loaderUrl = buildUrl + "/5.loader.js";
       var config = {
-        dataUrl: buildUrl + "/4.data",
-        frameworkUrl: buildUrl + "/4.framework.js",
-        codeUrl: buildUrl + "/4.wasm",
+        dataUrl: buildUrl + "/5.data",
+        frameworkUrl: buildUrl + "/5.framework.js",
+        codeUrl: buildUrl + "/5.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Mangkorn",
         productName: "Gravestone Prototype",
         productVersion: "0.1",
         showBanner: unityShowBanner,
@@ -80,7 +79,7 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('Limited functionalities on mobile devices!');
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
